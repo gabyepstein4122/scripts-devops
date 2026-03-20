@@ -1,15 +1,18 @@
 import os
 
 def mantenimiento():
-    print("🚀 Iniciando actualización completa...")
+    print("\n 1. 🚀 Iniciando actualización completa...")
     comando = "sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt clean"
     os.system(comando)
 
 def limpiar_cache():
-    print("🧹 Realizando limpieza profunda de caché...")
+    print("\n 2. ⏳ Verificando espacio en caché de paquetes...")
     os.system("sudo du -sh /var/cache/apt/archives") 
-    os.system("sudo apt clean")
-    print("✨ Caché de paquetes purgada.")
+    
+    print("🧹 Limpiando archivos temporales de paquetes...")
+    os.system("sudo apt autoremove -y && sudo apt clean")
+    
+    print("✅ Caché purgada y sistema optimizado.")
 
 if __name__ == "__main__":
     mantenimiento()
