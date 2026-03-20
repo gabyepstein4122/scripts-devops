@@ -2,7 +2,7 @@ import os
 
 def mantenimiento():
     print("\n 1. 🚀 Iniciando actualización completa...")
-    comando = "sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt clean"
+    comando = "sudo apt update && sudo apt upgrade -y"
     os.system(comando)
 
 def limpiar_cache():
