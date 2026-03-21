@@ -25,4 +25,5 @@ def clear_cache():
 if __name__ == "__main__":
     maintenance()
     clear_cache()
+    new_log() #fixeddddd
     print("\n✅ Process completed!")
