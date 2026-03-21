@@ -13,7 +13,7 @@ def maintenance():
     command = "sudo apt update && sudo apt upgrade -y"
     os.system(command)
 
-def limpiar_cache():
+def clear_cache():
     print("\n 2. ⏳ Checking package cache space...")
     os.system("sudo du -sh /var/cache/apt/archives") 
     
@@ -24,5 +24,5 @@ def limpiar_cache():
 
 if __name__ == "__main__":
     maintenance()
-    limpiar_cache()
+    clear_cache()
     print("\n✅ Process completed!")
