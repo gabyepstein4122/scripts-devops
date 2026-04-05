@@ -1,1 +1,10 @@
-maintenance.log
+# Ignorar scripts sueltos en desarrollo
+bateria.py
+red_status.py
+gemini.py
+setup_devops.py
+
+# Ignorar logs y archivos temporales
+*.log
+*.tmp
+.DS_Store
